@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心率:"
+                    android:textSize="30sp"
+                    />
+                <TextView
+                    android:id="@+id/textViewHeartrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温度:"
+                    android:textSize="30sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="℃"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血氧:"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/textViewSPO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心率下限"
+                    android:textSize="25sp"
+                    />
+                <EditText
+                    android:id="@+id/setHeartrateMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:digits="1234567890"
+                    android:maxLength="3"
+                    android:textSize="25sp"
+                    android:text="55"
+                    android:layout_marginLeft="5dp"
+                    android:cursorVisible="true"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="心率上限"
+                    android:textSize="25sp"
+                    />
+                <EditText
+                    android:id="@+id/setHeartrateMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:digits="1234567890"
+                    android:maxLength="3"
+                    android:textSize="25sp"
+                    android:text="120"
+                    android:layout_marginLeft="5dp"
+                    android:cursorVisible="true"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度下限"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/setTempMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:digits="1234567890."
+                android:textSize="25sp"
+                android:text="35"
+                android:layout_marginLeft="5dp"
+                android:cursorVisible="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度上限"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/setTempMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:digits="1234567890."
+                android:textSize="25sp"
+                android:text="37.5"
+                android:layout_marginLeft="5dp"
+                android:cursorVisible="true"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血氧下限"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/setSpo2Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:digits="1234567890"
+            android:textSize="25sp"
+            android:maxLength="3"
+            android:text="80"
+            android:layout_marginLeft="5dp"
+            android:cursorVisible="true"
+            />
+    </LinearLayout>
+
+   <Button
+    android:layout_width="120dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center_horizontal"
+    android:text="发送"
+    android:textSize="25sp"
+    android:onClick="onSendButtonClicked"
+    />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:id="@+id/butConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="连接蓝牙"
+                android:layout_weight="1"
+                android:onClick="onConnectButtonClicked"
+                />
+
+            <Button
+                android:id="@+id/butDisconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="蓝牙断开"
+                android:layout_weight="1"
+                android:onClick="onDisconnectionClicked"
+                />
+            <Button
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:layout_weight="1"
+                android:onClick="onSettingClicked" />
+            <Button
+                android:id="@+id/butExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="退出"
+                android:layout_weight="1"
+                android:onClick="onExitButtonClicked" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

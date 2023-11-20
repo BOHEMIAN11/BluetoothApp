@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="community">
+        <item>社区A</item>
+        <item>社区B</item>
+        <item>社区C</item>
+        <item>社区D</item>
+        <item>社区E</item>
+        <item>社区F</item>
+    </string-array>
+</resources>

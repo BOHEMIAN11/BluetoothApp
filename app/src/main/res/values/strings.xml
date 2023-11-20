@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">手机APP</string>
+    <string name="username">账号:</string>
+    <string name="password">密码:</string>
+    <string name="login">登入</string>
+    <string name="register">注册</string>
+    <string name="sex">性别</string>
+    <string name="info">个人信息</string>
+</resources>
